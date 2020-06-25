@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Мультивалютный обменный сервис 24/7</title>
@@ -14,6 +15,7 @@
 				<div class="nav__logo">
 					<a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
 				</div>
+				<button class="btn-burger-menu"></button>
 				<div class="nav__navigation">
 					<a href="#" class="nav__link">Компания</a>
 					<a href="#" class="nav__link">Блог</a>
@@ -29,7 +31,19 @@
 			
 		</div>
 	</nav>
-
+	<div class="nav--mobile">
+		<div class="nav__navigation--mobile">
+			<a href="#" class="nav__link--mobile">Компания</a>
+			<a href="#" class="nav__link--mobile">Блог</a>
+			<a href="#" class="nav__link--mobile">Контакты</a>
+		</div>
+		<div class="btn__group--mobile">
+			<button class="btn--sing--mobile">Вход</button>
+			<button class="btn--registration"> <p>
+				Регистрация
+			</p></button>
+		</div>
+	</div>
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -50,12 +64,14 @@
 									<div class="task__container">
 										
 										<input type="text" class="task__input" placeholder="1000.00">
-										<div class="task__img">
-											<img src="img/bg-task.png" alt="" class="task__imgs">
-										</div>
-										<div class="task__img__text">
-											<p class="">RUB</p>
-											<button class="btn--dropdown"></button>
+										<div class="task__var task__var-1">
+											<div class="task__img">
+												<img src="img/bg-task-1.png" alt="" class="task__imgs">
+											</div>
+											<div class="task__img__text">
+												<p class="">RUB</p>
+												<button class="btn--dropdown"></button>
+											</div>
 										</div>
 										
 									</div>
@@ -70,12 +86,14 @@
 									<div class="task__container">
 										
 										<input type="text" class="task__input" placeholder="970.00">
-										<div class="task__img">
-											<img src="img/bg-task.png" alt="" class="task__imgs">
-										</div>
-										<div class="task__img__text">
-											<p class="">RUB</p>
-											<button class="btn--dropdown"></button>
+										<div class="task__var task__var-2">
+											<div class="task__img">
+												<img src="img/bg-task-2.png" alt="" class="task__imgs">
+											</div>
+											<div class="task__img__text">
+												<p class="">RUB</p>
+												<button class="btn--dropdown"></button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -108,7 +126,7 @@
 						<p class="text__service">На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.</p>
 					</div>
 					<div class="service__item">
-						<img src="img/services/service-3.png" alt="" class="service__img">
+						<img src="img/services/service-3.png" alt="" class="service__img service__img--3" >
 						<h3 class="service__title">Онлайн поддержка</h3>
 						<p class="text__service">Четыре вида поддержки для наших клиентов:  Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</p>
 					</div>
@@ -146,44 +164,44 @@
 				<h2 class="advantages__title">Резерв валюты</h2>
 				<div class="advantages__inner advantages__inner-1">
 					<div class="advantage__item">
-						<img src="img/adv/img-1.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-1.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">Yandex RUB</h3>
+							<h3 class="advantage_title">Yandex RUB</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">900549</p>
+							<p class="advantage__text">900549</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
 					</div>
 					<!-- /.advantage__item -->
 					<div class="advantage__item">
-						<img src="img/adv/img-2.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-2.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">Ethereum ETH</h3>
+							<h3 class="advantage_title">Ethereum ETH</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">123</p>
+							<p class="advantage__text">123</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
 					</div>
 					<!-- /.advantage__item -->
 					<div class="advantage__item">
-						<img src="img/adv/img-3.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-3.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">Bitcoin BTC</h3>
+							<h3 class="advantage_title">Bitcoin BTC</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">0.63333439</p>
+							<p class="advantage__text">0.63333439</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
 					</div>
 					<!-- /.advantage__item -->
 					<div class="advantage__item">
-						<img src="img/adv/img-4.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-4.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">Сбербанк  RUB</h3>
+							<h3 class="advantage_title">Сбербанк  RUB</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">142666</p>
+							<p class="advantage__text">142666</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
@@ -196,44 +214,44 @@
 
 				<div class="advantages__inner">
 					<div class="advantage__item">
-						<img src="img/adv/img-5.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-5.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">Приват 24 UAH</h3>
+							<h3 class="advantage_title">Приват 24 UAH</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">142666</p>
+							<p class="advantage__text">142666</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
 					</div>
 					<!-- /.advantage__item -->
 					<div class="advantage__item">
-						<img src="img/adv/img-6.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-6.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">PayPal USD</h3>
+							<h3 class="advantage_title">PayPal USD</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">5139.58</p>
+							<p class="advantage__text">5139.58</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
 					</div>
 					<!-- /.advantage__item -->
 					<div class="advantage__item">
-						<img src="img/adv/img-7.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-7.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">PM USD</h3>
+							<h3 class="advantage_title">PM USD</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">3192.22</p>
+							<p class="advantage__text">3192.22</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
 					</div>
 					<!-- /.advantage__item -->
 					<div class="advantage__item">
-						<img src="img/adv/img-8.png" alt="" class="advantage__img">
+						<img src="img/advantage/img-8.png" alt="" class="advantage__img">
 						<div class="advantage__hero">
-							<h3 class="adv_title">Qiwi RUB</h3>
+							<h3 class="advantage_title">Qiwi RUB</h3>
 							<!-- /.adv_title -->
-							<p class="adv__text">99243.321</p>
+							<p class="advantage__text">99243.321</p>
 							<!-- /.adv__text -->
 						</div>
 						<!-- /.advantage__hero -->
@@ -253,7 +271,7 @@
 				Что клиенты говорят о нас
 			</h2>
 			<div class="reviews">
-				<div class="reviews__item">
+				<div class="reviews__item reviews__item-1">
 					<div class="reviews__text">
 						Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.
 					</div>
@@ -266,7 +284,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__item">
+				<div class="reviews__item reviews__item-2">
 					<div class="reviews__text">
 						3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!
 					</div>
@@ -331,7 +349,7 @@
 					<div class="social"><a href=""><img src="img/icon-social/instagram.png" alt=""></a></div>
 				</div>
 			</div>
-			<p class="subtitle__footer">Сервис обмена электронных валют</p>
+			<!-- <p class="subtitle__footer">Сервис обмена электронных валют</p> -->
 		</div>
 	</footer>
 
