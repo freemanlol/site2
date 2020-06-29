@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -9,15 +9,18 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Мультивалютный обменный сервис 24/7</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<nav class="nav">
+	<nav class="nav" id="nav">
 		<div class="container">
 			<div class="nav__inner">
 				<div class="nav__logo">
 					<a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
 				</div>
-				<button class="btn-burger-menu"></button>
+				<div class="btn-burger-menu">
+					<span></span>
+				</div>
 				<div class="nav__navigation">
 					<a href="#" class="nav__link">Компания</a>
 					<a href="#" class="nav__link">Блог</a>
@@ -46,7 +49,7 @@
 			</p></button>
 		</div>
 	</div>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header__inner">
 				<div class="intro animate__animated animate__backInDown">
@@ -147,8 +150,8 @@
 				<div class="news__post">
 					<div class="post__hero">
 						<h3 class="post__title">
-							Сервис обмена <br> электронных <br>
-							валют с 5-летней <br> историей
+							Сервис обмена  электронных 
+							валют с 5-летней историей
 						</h3>
 						<p class="post__text">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
 					</div>
@@ -273,32 +276,37 @@
 				Что клиенты говорят о нас
 			</h2>
 			<div class="reviews owl-carousel">
-				<div class="reviews__item reviews__item-1">
-					<div class="reviews__text">
-						Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.
-					</div>
-					<div class="reviews__block">
-						<div class="reviews__author">
-							Jacob Robertson
+				<div>
+					<div class="reviews__item reviews__item-1">
+						<div class="reviews__text">
+							Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.
 						</div>
-						<div class="reviews__date">
-							20.02.2020, 12:10
-						</div>
-					</div>
-				</div>
-				<div class="reviews__item reviews__item-2">
-					<div class="reviews__text">
-						3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!
-					</div>
-					<div class="reviews__block">
-						<div class="reviews__author">
-							Morris Robertson
-						</div>
-						<div class="reviews__date">
-							17.02.2020, 18:51
+						<div class="reviews__block">
+							<div class="reviews__author">
+								Jacob Robertson
+							</div>
+							<div class="reviews__date">
+								20.02.2020, 12:10
+							</div>
 						</div>
 					</div>
 				</div>
+				<div>
+					<div class="reviews__item reviews__item-2">
+						<div class="reviews__text">
+							3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!
+						</div>
+						<div class="reviews__block">
+							<div class="reviews__author">
+								Morris Robertson
+							</div>
+							<div class="reviews__date">
+								17.02.2020, 18:51
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 			<!-- <div class="reviews__array">
 				<img src="img/arrow-left.svg" alt="arrow-left" class="slider__nav--left array--left">
@@ -314,7 +322,7 @@
 				<div class="new__post2">
 					<!-- <img src="img/img-post2.png" alt="post2" class="img__post2"> -->
 					<div class="post2__hero">
-						<h2 class="post2__title">Будем рады предоставить <br> Вам качественный обмен <br> валют на нашем сервисе!</h2>
+						<h2 class="post2__title">Будем рады предоставить  Вам качественный обмен валют на нашем сервисе!</h2>
 						<p class="post2__suptitle">Начните обмен прямо сейчас</p>
 						<button class="btn--post2">Начать обмен</button>
 					</div>
@@ -358,5 +366,6 @@
 	<script src="app/owl.carousel.min.js"></script>
 	<script src="app/main.js"></script>
 	<script src="app/app.js"></script>
+	<script src="app/jAap.js"></script>
 </body>
 </html>

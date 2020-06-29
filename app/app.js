@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const closeAndOpen = document.querySelector('.btn-burger-menu'),
+        body = document.querySelector('body'),
         navigationMobile = document.querySelector('.nav--mobile'),
         serviceItems = document.querySelectorAll('.service__item'),
         newsPost = document.querySelector('.section--post__inner'),
@@ -11,10 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeAndOpen.addEventListener('click', () => {
         c++;
+
         navigationMobile.classList.remove("animate__backOutUp");
+        closeAndOpen.classList.add("active__burger");
+        body.classList.add("lock");
         navigationMobile.style.display = "block";
         navigationMobile.classList.add("animate__backInDown");
         if (c == 2) {
+            closeAndOpen.classList.remove("active__burger");
+            body.classList.remove("lock");
             navigationMobile.classList.add("animate__backOutUp");
             setTimeout(function timeAnime() {
                 navigationMobile.style.display = "";
@@ -26,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // width = 
     // window
     
-    if (document.body.clientWidth >= 590) {
+    if (document.body.clientWidth >= 1300) {
         console.log("я работаю")
         window.addEventListener('scroll', function() {
             if (pageYOffset >= 190) {
